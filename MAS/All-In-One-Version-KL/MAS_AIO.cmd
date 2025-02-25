@@ -348,7 +348,7 @@ echo:
 echo:
 echo:       ______________________________________________________________
 echo:
-echo:                 Activation Methods:
+echo:                 Métodos de ativação F5:
 echo:
 if defined _hwidgo (
 call :dk_color3 %_White% "             [1] " %_Green% "HWID" %_White% "                - Windows"
@@ -369,22 +369,22 @@ echo:             [4] KMS38               - Windows
 if defined _okmsgo (
 call :dk_color3 %_White% "             [5] " %_Green% "Online KMS" %_White% "          - Windows / Office"
 ) else (
-echo:             [5] Online KMS          - Windows / Office
+echo:             [5] KMS on-line          - Windows / Office
 )
 echo:             __________________________________________________ 
 echo:
-echo:             [6] Check Activation Status
-echo:             [7] Change Windows Edition
-echo:             [8] Change Office Edition
+echo:             [6] Verifique o status de ativação
+echo:             [7] Alterar a edição do Windows
+echo:             [8] Alterar edição do Office
 echo:             __________________________________________________      
 echo:
-echo:             [9] Troubleshoot
+echo:             [9] Solucionar problemas
 echo:             [E] Extras
-echo:             [H] Help
-echo:             [0] Exit
+echo:             [H] Ajuda
+echo:             [0] Sair
 echo:       ______________________________________________________________
 echo:
-call :dk_color2 %_White% "         " %_Green% "Choose a menu option using your keyboard [1,2,3...E,H,0] :"
+call :dk_color2 %_White% "         " %_Green% "Escolha uma opção de menu usando o teclado [1,2,3...E,H,0] :"
 choice /C:123456789EH0 /N
 set _erl=%errorlevel%
 
@@ -425,15 +425,15 @@ echo:
 echo:
 echo:           ______________________________________________________
 echo:           
-echo:                [1] Extract $OEM$ Folder
+echo:                [1] Extraia a pasta $OEM$
 echo:                  
-echo:                [2] Download Genuine Windows / Office 
+echo:                [2] Baixe o Windows / Office original 
 echo:                ____________________________________________      
 echo:                                                                          
-echo:                [0] Go to Main Menu
+echo:                [0] Vá para o menu principal
 echo:           ______________________________________________________
 echo:
-call :dk_color2 %_White% "             " %_Green% "Choose a menu option using your keyboard [1,2,0] :"
+call :dk_color2 %_White% "             " %_Green% "Escolha uma opção de menu usando o teclado [1,2,0]:"
 choice /C:120 /N
 set _erl=%errorlevel%
 
